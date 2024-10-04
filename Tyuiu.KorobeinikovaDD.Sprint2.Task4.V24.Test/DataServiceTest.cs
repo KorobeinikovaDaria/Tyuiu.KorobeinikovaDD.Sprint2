@@ -18,9 +18,9 @@ namespace Tyuiu.KorobeinikovaDD.Sprint2.Task4.V24.Test
         {
 
             DataService ds = new DataService();
-            double x = 0;
-            double y = 0;
-            double wait = 0.833;
+            double x = 5;
+            double y = 5;
+            double wait = 0.942;
             double res = ds.Calculate(x, y);
             Assert.AreEqual(wait, res);
         }
