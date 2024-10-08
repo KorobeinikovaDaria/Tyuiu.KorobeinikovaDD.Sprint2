@@ -155,8 +155,8 @@ namespace Tyuiu.KorobeinikovaDD.Sprint2.Task5.V8.Lib
                 default:
                     throw new ArgumentException($"Значение m должно быть от 1 до 12.");
                         }
-            string t = res + "." + res1;
-            return t ;
+            
+            return res + "." + res1;
         }
     }
 }
