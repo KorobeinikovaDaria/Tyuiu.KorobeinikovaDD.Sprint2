@@ -11,7 +11,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint2.Task5.V8.Test
 
             int n = 1;
             int m = 2;
-            Assert.AreEqual("31 январ€", ds.FindDateOfPreviousDay(m, n));
+            Assert.AreEqual("31.01", ds.FindDateOfPreviousDay(m, n));
         }
     }
 }

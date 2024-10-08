@@ -6,108 +6,109 @@ namespace Tyuiu.KorobeinikovaDD.Sprint2.Task5.V8.Lib
     {
         public string FindDateOfPreviousDay(int m, int n)
         {
-            int res = 0;
+            var res = "";
             var res1 = "";
 
             switch (n)
             {
                 case (1):
-                    if ((m == 2) | (m == 4) | (m == 11) | (m == 9) | (m == 8) | (m == 6)|(m == 1)) { res = 31; m -= 1; }
+                    if ((m == 2) | (m == 4) | (m == 11) | (m == 9) | (m == 8) | (m == 6)|(m == 1)) { res = "31"; m -= 1; }
                     else
                     {
-                        if (m == 3) { res = 28; m = 2; }
-                        else { res = 30; m -= 1; }
+                        if (m == 3) { res = "28"; m = 2; }
+                        else { res = "30"; m -= 1; }
                     }
                     break;
                 case 2:
-                    res = 1;
+                    res = "01";
                     break;
                 case 3:
-                    res = 2;
+                    res = "02";
                     break;
                 case 4:
-                    res = 3;
+                    res = "03";
                     break;
                 case 5:
-                    res = 4;
+                    res = "04";
                     break;
                 case 6:
-                    res = 5;
+                    res = "05";
                     break;
                 case 7:
-                    res = 6;
+                    res = "06";
                     break;
                 case 8:
-                    res = 7;
+                    res = "07";
                     break;
                 case 9:
-                    res = 8;
+                    res = "08";
                     break;
                 case 10:
-                    res = 9;
+                    res = "09";
                     break;
                 case 11:
-                    res = 10;
+                    res = "10";
                     break;
                 case 12:
-                    res = 11;
+                    res = "11";
                     break;
                 case 13:
-                    res = 12;
+                    res = "12";
                     break;
                 case 14:
-                    res = 13;
+                    res = "13";
                     break;
                 case 15:
-                    res = 14;
+                    res = "14";
                     break;
                 case 16:
-                    res = 15;
+                    res = "15";
+
                     break;
                 case 17:
-                    res = 16;
+                    res = "16";
                     break;
                 case 18:
-                    res = 17;
+                    res = "17";
                     break;
                 case 19:
-                    res = 18;
+                    res = "18";
                     break;
                 case 20:
-                    res = 19;
+                    res = "19";
                     break;
                 case 21:
-                    res = 20;
+                    res = "20";
                     break;
                 case 22:
-                    res = 21;
+                    res = "21";
                     break;
                 case 23:
-                    res = 22;
+                    res = "22";
                     break;
                 case 24:
-                    res = 23;
+                    res = "23";
                     break;
                 case 25:
-                    res = 24;
+                    res = "24";
                     break;
                 case 26:
-                    res = 25;
+                    res = "25";
                     break;
                 case 27:
-                    res = 26;
+                    res = "26";
                     break;
                 case 28:
-                    res = 27;
+                    res = "27";
                     break;
                 case 29:
-                    res = 28;
+                    res = "28";
                     break;
                 case 30:
-                    res = 29;
+                    res = "29";
                     break;
                 case 31:
-                    res = 30;
+                    res = "30";
                     break;
                 default:
                     throw new ArgumentException($"Значение n должно быть от 1 до 31.");
@@ -116,45 +117,45 @@ namespace Tyuiu.KorobeinikovaDD.Sprint2.Task5.V8.Lib
             switch (m)
             {
                 case (1):
-                    res1 = "Января";
+                    res1 = "01";
                     break;
                 case 2:
-                    res1 = "Февраля";
+                    res1 = "02";
                     break;
                 case 3:
-                    res1 = "Марта";
+                    res1 = "03";
                     break;
                 case 4:
-                    res1 = "Апреля";
+                    res1 = "04";
                     break;
                 case 5:
-                    res1 = "Мая";
+                    res1 = "05";
                     break;
                 case 6:
-                    res1 = "Июня";
+                    res1 = "06";
                     break;
                 case 7:
-                    res1 = "Июля";
+                    res1 = "07";
                     break;
                 case 8:
-                    res1 = "Августа";
+                    res1 = "08";
                     break;
                 case 9:
-                    res1 = "Сентября";
+                    res1 = "09";
                     break;
                 case 10:
-                    res1 = "Октября";
+                    res1 = "10";
                     break;
                 case 11:
-                    res1 = "Ноября";
+                    res1 = "11";
                     break;
                 case 12:
-                    res1 = "Декабря";
+                    res1 = "12";
                     break;
                 default:
                     throw new ArgumentException($"Значение m должно быть от 1 до 12.");
                         }
-            string t = Convert.ToString(res)+ " " + res1;
+            string t = res + "." + res1;
             return t ;
         }
     }
