@@ -9,14 +9,14 @@ namespace Tyuiu.KorobeinikovaDD.Sprint2.Task5.V8.Lib
             var res = "";
             var res1 = "";
 
-            switch (n)
+            switch (m)
             {
                 case (1):
-                    if ((m == 2) | (m == 4) | (m == 11) | (m == 9) | (m == 8) | (m == 6)|(m == 1)) { res = "31"; m -= 1; }
+                    if ((n == 2) | (n == 4) | (n == 11) | (n == 9) | (n == 8) | (n == 6)|(n == 1)) { res = "31"; n -= 1; }
                     else
                     {
-                        if (m == 3) { res = "28"; m = 2; }
-                        else { res = "30"; m -= 1; }
+                        if (n == 3) { res = "28"; n = 2; }
+                        else { res = "30"; n -= 1; }
                     }
                     break;
                 case 2:
@@ -114,7 +114,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint2.Task5.V8.Lib
                     throw new ArgumentException($"Значение n должно быть от 1 до 31.");
               
             }
-            switch (m)
+            switch (n)
             {
                 case (1):
                     res1 = "01";
@@ -154,8 +154,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint2.Task5.V8.Lib
                     break;
                 default:
                     throw new ArgumentException($"Значение m должно быть от 1 до 12.");
-                        }
-            
+                        }           
             return res + "." + res1;
         }
     }
