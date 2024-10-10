@@ -11,7 +11,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint2.Task6.V9.Test
 
             int n = 1;
             int m = 12;
-            Assert.AreEqual("13.01", ds.FindDateOfNextDay(m, n));
+            Assert.AreEqual("02.12", ds.FindDateOfNextDay(m, n));
         }
     }
 }

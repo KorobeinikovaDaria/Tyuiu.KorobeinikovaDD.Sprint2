@@ -14,7 +14,7 @@ int n = Convert.ToInt32(Console.ReadLine());
 
 string t;
 
-if ((n < 1) || (n > 12) || (m < 1) || (m > 31))
+if ((m < 1) || (m > 12) || (n < 1) || (n > 31))
 {
     t = "Введенно неверное значение!";
 }
