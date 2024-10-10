@@ -8,7 +8,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint2.Task6.V9.Lib
             var res = "";
             var res1 = "";
 
-            res = m switch
+            res = n switch
             {
                 1 => "02",
                 2 => "03",
@@ -42,7 +42,7 @@ namespace Tyuiu.KorobeinikovaDD.Sprint2.Task6.V9.Lib
                 30 => "31",
                 31 => "01"
             };
-            res1 = n switch
+            res1 = m switch
                     {
                         1 => "01",
                         2 => "02",
